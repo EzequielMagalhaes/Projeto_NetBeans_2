@@ -66,7 +66,7 @@ public class ClienteDAL extends ConexaoMYSQL{
          List listaClientes = new ArrayList();
          while(rs.next())
          {
-             clientesDTO cliente = new clientesDTO();
+             ClienteDTO cliente = new ClienteDTO();
              cliente.setCliID(rs.getInt("cliID"));
              cliente.setCliNome(rs.getString("cliNome"));
              cliente.setCliDtInclusao(rs.getDate("cliDtInclusao"));
